@@ -1,0 +1,98 @@
+body {
+    font-family: korolev-rounded, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: rgba(226,240,214,.5);
+    color: #10222B;
+  }
+  
+  #home {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 6em;
+  }
+  
+  h1 {
+    margin: 10px;
+    font-size: 30px;
+  }
+  
+  p {
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .container-form {
+    width: 400px;
+    height: 600px;
+    animation: color-change-2x; 
+    animation: color-change-2x 4s linear alternate both;
+    border: 8px;
+    border-color: rgba(65,91,118,1);
+    border-style: groove;
+    border-radius: 0%;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  input[type="text"] {
+    border: 2px solid rgba(65,91,118,1);
+    box-shadow: inset 0 0 5px rgba(113,149,137,1);
+    border-radius: 10px;
+    width: 200px;
+    margin: 10px;
+    padding: 0 10px;
+  }
+  
+  input[type="radio"] {
+    margin: 5px;
+  }
+  
+  .font {
+    font-size: .8em;
+  }
+  
+  button {
+    font-size: .8em;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); 
+    border-radius: 20px;
+  }
+  
+  .photo { 
+    float: left;
+    margin: 10px;
+  }
+  
+  .photo img {
+    width: 162px;
+  }
+  
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 6em;
+    background-color: rgba(205,214,213,.75);
+  }
+  
+  blockquote {
+    font-size: .85em;
+    text-align: center;
+    font-family: korolev-rounded, sans-serif;
+    font-weight: 525;
+    font-style: italic;
+  }
+  
+  @keyframes color-change-2x {
+    0% {
+      background: rgba(196,217,191,.5);
+    }
+    100% {
+      background: rgba(4,99,128,.5);
+    }
+  }

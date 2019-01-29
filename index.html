@@ -2,112 +2,102 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>photos</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/wul7jrr.css">
+    <title>photos</title>
 </head>
 
 <body id="home">
-  <div class="container-nav">
-    <h1>Welcome!</h1>
-    <!-- navbar -->
-    <ul class="nav justify-content-end">
-      <li class="nav-item">
-        <a class="nav-link active" href="#home">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#about">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#signup">Sign Up</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#footer">Footer</a>
-      </li>
-    </ul>
-  </div>
-  <!-- /navbar -->
+    <div id="content-wrap">
+        <div class="container-nav">
+            <h1>Welcome!</h1>
+            <!-- navbar -->
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#main">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#footer">Footer</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /navbar -->
 
-  <hr />
+        <hr />
+        <p id="about">
+            We provide curated collections of <em>royalty-free</em> stock photos to suit your interests.
+            Create an account and we will select photos for you based on your interests.
+        </p>
 
-  <p id="about">
-    We provide curated collections of <em>royalty-free</em> stock photos to suit your interests.
-    Create an account and we will select photos for you based on your interests.
-  </p>
-
-  <div class="container-form">
-    <form id="signup">
-      <strong>Sign up for free</strong>
-      <br /><br />
-      <input class="signup" type="text" value="" placeholder="First & Last Name">
-      <br />
-      <p class="form">
-        What kind of photos do you like most?
-        <br />
-        <input type="radio" name="photo-pref" value="space">Space Photos
-        <br>
-        <input type="radio" name="photo-pref" value="sport">Sports Photos
-        <br>
-        <input type="radio" name="photo-pref" value="wildlife">Wildlife Photos
-        <br>
-        <input type="radio" name="photo-pref" value="fauna">Plant Photos
-        <br>
-      </p>
-      <br />
-      <button class="action">Confirm</button>
-    </form>
-  </div>
-
-
-  <div class="gallery">
-    <!-- space photo -->
-    <div class="image-container">
-      <img src="./assets/1space.jpg">
+        <div id="main">
+            <div class="container-form">
+                <div class="signup">
+                    <form>
+                        <strong>Sign up for free</strong>
+                        <br /><br />
+                        <input type="text" value="" placeholder="First & Last Name">
+                        <p>
+                            What kind of photos do you like most?
+                        </p>
+                        <div class="font">
+                            <input type="radio" class="photo-pref" value="sport">Space Photos<br />
+                            <input type="radio" class="photo-pref" value="sport">Sports Photos<br />
+                            <input type="radio" class="photo-pref" value="wildlife">Wildlife Photos<br />
+                            <input type="radio" class="photo-pref" value="fauna">Plant Photos<br />
+                            <br />
+                        </div>
+                        <button class="action">Confirm</button>
+                        <div class="gallery">
+                            <div class="photo">
+                                <img src="./assets/1space.jpg">
+                            </div>
+                            <div class="photo">
+                                <img src="./assets/2sport.jpg">
+                            </div>
+                            <div class="photo">
+                                <img src="./assets/3fauna.jpg">
+                            </div>
+                            <div class="photo">
+                                <img src="./assets/4flora.jpg">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- /space photo -->
-    <!-- sport photo -->
-    <div class="image-container">
-      <img src="./assets/2sport.jpg">
-    </div>
-    <!-- /sport photo -->
-    <!-- fauna photo -->
-    <div class="image-container">
-      <div class="photo">
-        <img src="./assets/3fauna.jpg">
-      </div>
-    </div>
-    <!-- /fauna photo -->
-    <!-- flora photo -->
-    <div class="image-container">
-      <div class="photo">
-        <img src="./assets/4flora.jpg">
-      </div>
-    </div>
-    <!-- /flora photo -->
-  </div>
 
-  <footer id="footer">
-    <hr />
-    <blockquote>
-      "There are always two people in every picture:<br />the photographer and the viewer."
-      <br />~Ansel Adams
-    </blockquote>
-  </footer>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
+
+    <footer id="footer">
+        <hr />
+        <blockquote>
+            "There are always two people in every picture:<br />the photographer and the viewer."
+            <br />~Ansel Adams
+        </blockquote>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
